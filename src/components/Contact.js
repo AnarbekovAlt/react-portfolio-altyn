@@ -60,7 +60,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                   src={contactImg}
-                  alt="Contact Us"
+                  alt="Contact  Us"
                 />
               )}
             </TrackVisibility>
