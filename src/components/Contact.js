@@ -135,20 +135,9 @@ export const Contact = () => {
                           }
                         ></textarea>
                         <button type="submit">
-                          <span>{buttonText}</span>
+                          <span>Send</span>
                         </button>
                       </Col>
-                      {status.message && (
-                        <Col>
-                          <p
-                            className={
-                              status.success === false ? "danger" : "success"
-                            }
-                          >
-                            {status.message}
-                          </p>
-                        </Col>
-                      )}
                     </Row>
                   </form>
                 </div>
