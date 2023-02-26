@@ -68,7 +68,7 @@ function NavBar() {
               <a href="https://github.com/AnarbekovAlt">
                 <img className="github-icon" src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/altynbek-anarbekov-777b00174/">
                 <img className="linkedin-icon" src={navIcon2} alt="" />
               </a>
             </div>
