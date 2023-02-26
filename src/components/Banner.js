@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 
@@ -11,7 +11,7 @@ const Banner = () => {
   const [text, setText] = useState(""); //Portion of the word being displayed
   const [delta, setDelta] = useState(300 - Math.random() * 100); //How fast one letter is typed after the other
 
-  const tick = () => {
+  const tick = useCallback(() => {
     let i = loopNum % toRotate.length; // i would be the index as to like from the array we're currently picking, and the reason is that loopNum is constantly increasing, but we don't have 4th element in toRotate, so we would like to go the first element again
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -30,7 +30,7 @@ const Banner = () => {
       setDelta(500);
       setLoopNum(loopNum + 1);
     }
-  };
+  }, []);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -40,7 +40,7 @@ const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [text, delta, tick]);
 
   return (
     <section className="banner" id="home">
