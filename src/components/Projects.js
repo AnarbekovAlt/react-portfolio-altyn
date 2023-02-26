@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/law-firm-react-edited.JPG";
 import projImg2 from "../assets/img/github-search-js.jpg";
@@ -86,7 +86,11 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="Background"
+      ></img>
     </section>
   );
 };
