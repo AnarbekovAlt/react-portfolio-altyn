@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/law-firm-react-edited.JPG";
+import projImg2 from "../assets/img/github-search-js.jpg";
+import projImg3 from "../assets/img/task-scheduler-react.jpg";
+import projImg4 from "../assets/img/car-detection.jpg";
+import projImg5 from "../assets/img/english-classes.jpg";
+import projImg6 from "../assets/img/cash-register2.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,34 +13,40 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Law Firm Landing",
+      description: "Tyepscript & React, Tailiwind",
       imgUrl: projImg1,
+      link: "https://github.com/AnarbekovAlt/law-firm-react-ts",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Search Github Users",
+      description: "Vanilla JS",
       imgUrl: projImg2,
+      link: "https://github.com/AnarbekovAlt/search-github-users",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Task Scheduler",
+      description: "React, Tailwind",
       imgUrl: projImg3,
+      link: "https://github.com/AnarbekovAlt/React-task-scheduler",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Car Detection",
+      description: "Python, YOLOV3",
+      imgUrl: projImg4,
+      link: "https://github.com/AnarbekovAlt/Traffic-analysis",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "English School",
+      description: "HTML, CSS, Bootstrap",
+      imgUrl: projImg5,
+      link: "https://github.com/AnarbekovAlt/law-firm-react-ts",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Cash Register Landing",
+      description: "HTML, CSS, Bootstrap",
+      imgUrl: projImg6,
+      link: "https://github.com/AnarbekovAlt/online-cash-register",
     },
   ];
 
@@ -54,13 +63,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
+                  <p></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Tab.Content
                       id="slideInUp"

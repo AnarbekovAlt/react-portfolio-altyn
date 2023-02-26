@@ -4,7 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 
 const Banner = () => {
-  const toRotate = ["Frontend Developer", "Web Developer", "Web Designer"];
+  const toRotate = ["Frontend Developer", "Web Developer"];
   const period = 2000; //How much time before each word
 
   const [loopNum, setLoopNum] = useState(0); //Which word is currently displayed
@@ -46,23 +46,32 @@ const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              Hi! I'm Altyn <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, dicta?
-            </p>
-            <button onClick={() => {}}>
-              Let's Connect! <ArrowRightCircle size={25} />
-            </button>
+        <Row className="align-items-center justify-content-center">
+          <Col xs={12} md={12} xl={8}>
+            <div className="banner-text">
+              <Col className="me-auto" xs={12} md={12} xl={12}>
+                <div className="tagline">Welcome to my Portfolio!</div>
+              </Col>
+              <h1>
+                Hi! I'm Altyn <br />
+                <span className="wrap">{text}</span>
+              </h1>
+              <p>
+                I'm passionate about cutting-edge, beautiful interfaces and
+                intuitively implemented UX.
+              </p>
+              <button onClick={() => {}}>
+                <a href="#connect">
+                  <span>
+                    Let's Connect! <ArrowRightCircle size={25} />
+                  </span>
+                </a>
+              </button>
+            </div>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          {/* <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header" />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

@@ -74,10 +74,14 @@ export const Contact = () => {
                   }
                 >
                   <h2>Get In Touch</h2>
-                  <form onSubmit={handleSubmit}>
+                  <form
+                    action="https://formsubmit.co/8006186406d2990e7ebda15ac77fbc04"
+                    method="POST"
+                  >
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input
+                          name="first-name"
                           type="text"
                           value={formDetails.firstName}
                           placeholder="First Name"
@@ -88,6 +92,7 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
+                          name="last-name"
                           type="text"
                           value={formDetails.lasttName}
                           placeholder="Last Name"
@@ -98,6 +103,7 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
+                          name="email"
                           type="email"
                           value={formDetails.email}
                           placeholder="Email Address"
@@ -108,6 +114,7 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} sm={6} className="px-1">
                         <input
+                          name="phone"
                           type="tel"
                           value={formDetails.phone}
                           placeholder="Phone No."
@@ -118,6 +125,8 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea
+                          name="message"
+                          required
                           rows="6"
                           value={formDetails.message}
                           placeholder="Message"
