@@ -16,42 +16,48 @@ export const Projects = () => {
       title: "Law Firm Landing",
       description: "Tyepscript & React, Tailiwind",
       imgUrl: projImg1,
-      link: "https://github.com/AnarbekovAlt/law-firm-react-ts",
+      github: "https://github.com/AnarbekovAlt/law-firm-react-ts",
+      demo: "https://react-ts-law-firm.web.app/",
     },
     {
       title: "Search Github Users",
       description: "Vanilla JS",
       imgUrl: projImg2,
-      link: "https://github.com/AnarbekovAlt/search-github-users",
+      github: "https://github.com/AnarbekovAlt/search-github-users",
+      demo: "https://delicate-kitsune-a1eae5.netlify.app/",
     },
     {
       title: "Task Scheduler",
       description: "React, Tailwind",
       imgUrl: projImg3,
-      link: "https://github.com/AnarbekovAlt/React-task-scheduler",
+      github: "https://github.com/AnarbekovAlt/React-task-scheduler",
+      demo: "https://react-task-scheduler-demo.netlify.app/",
     },
     {
       title: "Car Detection",
       description: "Python, YOLOV3",
       imgUrl: projImg4,
-      link: "https://github.com/AnarbekovAlt/Traffic-analysis",
+      github: "https://github.com/AnarbekovAlt/Traffic-analysis",
+      demo: "#",
     },
     {
       title: "English School",
       description: "HTML, CSS, Bootstrap",
       imgUrl: projImg5,
-      link: "https://github.com/AnarbekovAlt/law-firm-react-ts",
+      github: "https://github.com/AnarbekovAlt/law-firm-react-ts",
+      demo: "https://astonishing-cheesecake-429d7e.netlify.app/",
     },
     {
       title: "Cash Register Landing",
       description: "HTML, CSS, Bootstrap",
       imgUrl: projImg6,
-      link: "https://github.com/AnarbekovAlt/online-cash-register",
+      github: "https://github.com/AnarbekovAlt/online-cash-register",
+      demo: "#",
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>

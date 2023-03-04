@@ -92,6 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
+  padding-top: 8px;
   background-color: rgba(3, 3, 3, 0.9);
 }
 .logo {
@@ -111,6 +112,7 @@ nav.navbar.scrolled {
   color: rgb(255, 255, 255);
 }
 nav.navbar a.navbar-brand {
+  transform: translateY(-5px);
   margin-left: 15px !important;
   width: 60px;
   height: 60px;
@@ -438,6 +440,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-txtx {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   top: 65%;
   left: 50%;
@@ -462,6 +468,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  width:70%;
+  justify-content: center;
+  gap: 20px;
+}
+.project-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.project-links a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -471,7 +493,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/** Projects Css **/
 .contact {
   background: linear-gradient(90.21deg, rgb(17, 133, 94) -5.91%, rgb(17, 165, 116) 111.58%);
   padding: 60px 0 60px 0;
@@ -543,9 +565,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+/** Projects Css **/
+footer {}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 @media screen and (max-width: 768px) {
   .banner h1 {
     font-size: 40px;
+  }
+  .contact form button {
+    
   }
 }

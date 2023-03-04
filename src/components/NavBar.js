@@ -62,15 +62,26 @@ function NavBar() {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="#connect"
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => {
+                onUpdateActiveLink("projects");
+              }}
+            >
+              Contact Me
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://github.com/AnarbekovAlt">
                 <img className="github-icon" src={navIcon1} alt="" />
               </a>
-              <a href="https://www.linkedin.com/in/altynbek-anarbekov-777b00174/">
+              {/* <a href="https://www.linkedin.com/in/altynbek-anarbekov-777b00174/">
                 <img className="linkedin-icon" src={navIcon2} alt="" />
-              </a>
+              </a> */}
             </div>
             <a href="#connect">
               <button className="vvd" onClick={() => {}}>

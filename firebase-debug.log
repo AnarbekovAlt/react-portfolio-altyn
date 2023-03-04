@@ -1,0 +1,42 @@
+[debug] [2023-03-02T09:44:26.095Z] ----------------------------------------------------------------------
+[debug] [2023-03-02T09:44:26.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-03-02T09:44:26.099Z] CLI Version:   11.24.0
+[debug] [2023-03-02T09:44:26.100Z] Platform:      win32
+[debug] [2023-03-02T09:44:26.100Z] Node Version:  v16.17.0
+[debug] [2023-03-02T09:44:26.102Z] Time:          Thu Mar 02 2023 15:44:26 GMT+0600 (East Kazakhstan Time)
+[debug] [2023-03-02T09:44:26.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-02T09:44:26.127Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-03-02T09:44:26.346Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-02T09:44:26.347Z] > authorizing via signed-in user (altynbek290697@gmail.com)
+[debug] [2023-03-02T09:44:26.348Z] [iam] checking project react-portfolio-altyn for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-02T09:44:26.349Z] > refreshing access token with scopes: []
+[debug] [2023-03-02T09:44:26.351Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-02T09:44:26.351Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-03-02T09:44:26.397Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-03-02T09:44:26.400Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-03-02T09:44:26.401Z] > refreshing access token with scopes: []
+[debug] [2023-03-02T09:44:26.403Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-02T09:44:26.403Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-02T09:44:26.462Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-03-02T09:44:26.467Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.getAccessToken (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:10:21)
+    at async requireHostingSite (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\Altyn\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project react-portfolio-altyn. Please make sure the project exists and your account has permission to access it.
